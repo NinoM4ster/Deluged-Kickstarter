@@ -12,10 +12,10 @@ printf "\n\e[96;1m Welcome to Deluged Kickstart script!\n    > > GitHub.com/Nino
 read -rsp $'\e[96;1mPress <Enter> to begin...'; clear
 
 printf "\e[37;1mHere's what I am going to do:\n\n"
-printf "\e[37;1m> Add the official Deluge repository:\n"
-printf "\e[93m   sudo add-apt-repository ppa:deluge-team/ppa\n\n"
+printf "\e[37;1m> Add the official Deluge 2.X stable repository:\n"
+printf "\e[93m   sudo add-apt-repository ppa:deluge-team/stable\n\n"
 
-printf "\e[37;1m> Update the system and install Deluged and Deluge-webui:\n"
+printf "\e[37;1m> Update the system and install the latest version of Deluged and Deluge-webui:\n"
 printf "\e[93m   sudo apt update\n   sudo apt install deluged deluge-webui\n\n"
 
 printf "\e[37;1m> Create system user for Deluge:\n"
@@ -32,8 +32,8 @@ read -rsp $'\e[96;1mPress <Enter> to continue or Ctrl + C to abort...'
 clear
 
 printf "\n\e[37;1mOkay.. let's do it.\n\n"
-printf "\e[93;1m>> sudo add-apt-repository ppa:deluge-team/ppa\n\e[0m"
-sudo add-apt-repository ppa:deluge-team/ppa
+printf "\e[93;1m>> sudo add-apt-repository ppa:deluge-team/stable\n\e[0m"
+sudo add-apt-repository ppa:deluge-team/stable
 
 printf "\n\e[93;1m>> sudo apt update\n\e[0m"
 sudo apt update
@@ -69,6 +69,6 @@ printf "\n\e[93;1m>> sudo systemctl enable deluged\n\e[0m"
 sudo systemctl enable deluge-web
 sleep 1
 
-printf "\n\e[96;1mScript finished!\n\nNow try to access the Web-UI:\nhttp://<server ip>:8112\e[0m\n"
+printf "\n\e[96;1mInstallation successful!\n\nNow try to access the Web-UI:\nhttp://<server ip>:8112\e[0m\n"
 
 trap - EXIT
