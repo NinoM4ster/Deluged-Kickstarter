@@ -15,8 +15,8 @@ printf "\e[37;1mHere's what I am going to do:\n\n"
 printf "\e[37;1m> Add the official Deluge 2.X stable repository:\n"
 printf "\e[93m   sudo add-apt-repository ppa:deluge-team/stable\n\n"
 
-printf "\e[37;1m> Update the system and install the latest version of Deluged and Deluge-webui:\n"
-printf "\e[93m   sudo apt update\n   sudo apt install deluged deluge-webui\n\n"
+printf "\e[37;1m> Update the system and install the latest version of Deluged and Deluge-web:\n"
+printf "\e[93m   sudo apt update\n   sudo apt install deluged deluge-web\n\n"
 
 printf "\e[37;1m> Create system user for Deluge:\n"
 printf "\e[93m   sudo adduser --system --gecos \"\" --disabled-password --group --home /var/lib/deluge deluge\n\n"
@@ -38,8 +38,8 @@ sudo add-apt-repository ppa:deluge-team/stable
 printf "\n\e[93;1m>> sudo apt update\n\e[0m"
 sudo apt update
 
-printf "\n\e[93;1m>> sudo apt install deluged deluge-webui\n\e[0m"
-sudo apt install deluged deluge-webui
+printf "\n\e[93;1m>> sudo apt install deluged deluge-web\n\e[0m"
+sudo apt install deluged deluge-web
 
 printf "\n\e[93;1m>> sudo adduser --system --gecos \"\" --disabled-password --group --home /var/lib/deluge deluge\n\e[0m"
 sudo adduser --system --gecos "" --disabled-password --group --home /var/lib/deluge deluge
